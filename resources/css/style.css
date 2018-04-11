@@ -1,0 +1,54 @@
+/*portfolio site for Michael Bragg, web programmer*/
+
+html {
+
+}
+
+/*header styling*/
+.navbar li {
+  line-height:50px;
+  padding-right:1rem;
+}
+
+.active {
+  background-color: #f8f8f8;
+  text-shadow: 1px 1px 2px #a0a0ab;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color:inherit;
+}
+
+
+/*jumbotron styling*/
+.vision .jumbotron {
+  background-image: url('../images/snowy-mountains.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  height: 25rem;
+  text-align:center;
+  margin-bottom:0;
+}
+
+.vision h1 {
+  color:#1C1C2a;
+  padding-top:3rem;
+  padding-bottom:3rem;
+  font-family:"Josefin Sans", sans-serif;
+  font-size:10rem;
+  font-weight:bold;
+  letter-spacing:0.4rem;
+  text-shadow: 1px 1px 5px rgba(220,220,236,.6),
+                3px 1px 8px rgba(220,220,236,.4),
+                1px 1px rgba(220,220,236,.4),
+                -1px 1px rgba(220,220,236,.4),
+                1px -1px rgba(220,220,236,.4),
+                -1px -1px rgba(220,220,236,.4);
+}
+
+/*projects styling*/
+.projects {
+  height:25rem;
+  background-image:url("../images/snow.jpg");
+}
