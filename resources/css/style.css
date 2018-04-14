@@ -4,10 +4,26 @@ html {
 
 }
 
+.image-container {
+  max-width:100%;
+  height:auto;
+  overflow:hidden;
+}
+
+.image-container img {
+  max-width:100%;
+  height:auto;
+}
+
+
 /*header styling*/
 .navbar li {
   line-height:50px;
   padding-right:1rem;
+}
+
+.navbar {
+  font-family:"Abril Fatface" , sans-serif;
 }
 
 .active {
@@ -19,6 +35,14 @@ html {
   background-color:inherit;
 }
 
+.navbar img {
+  height:35px;
+  width:auto;
+}
+
+.navbar-brand {
+  display:flex;
+}
 
 /*jumbotron styling*/
 .vision .jumbotron {
@@ -26,19 +50,20 @@ html {
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-  height: 25rem;
+  height: 40rem;
   text-align:center;
   margin-bottom:0;
 }
 
 .vision h1 {
-  color:#1C1C2a;
+  color:#383535;
+  opacity:.95;
   padding-top:3rem;
   padding-bottom:3rem;
-  font-family:"Josefin Sans", sans-serif;
-  font-size:10rem;
+  font-family:"Abril Fatface", sans-serif;
+  font-size:8rem;
   font-weight:bold;
-  letter-spacing:0.4rem;
+  letter-spacing:1.4rem;
   text-shadow: 1px 1px 5px rgba(220,220,236,.6),
                 3px 1px 8px rgba(220,220,236,.4),
                 1px 1px rgba(220,220,236,.4),
@@ -47,8 +72,85 @@ html {
                 -1px -1px rgba(220,220,236,.4);
 }
 
+/*----------------*/
 /*projects styling*/
+/*----------------*/
 .projects {
-  height:25rem;
   background-image:url("../images/snow.jpg");
+  padding-bottom:4rem;
+  background-size:contain;
+  background-repeat:repeat;
+}
+
+.projects-top-decor {
+  margin-top:2rem;
+}
+
+.decor {
+  background-color: rgba(25,30,50,.8);
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:0;
+}
+
+.projects-top-decor .decor {
+  height:3.5rem;
+}
+
+.projects-bottom-decor .decor {
+  height:2rem;
+}
+
+.decor .image-container {
+  margin-top:.2em;
+  max-width:80%;
+  opacity:.9;
+
+}
+
+
+.site-preview {
+  height:26rem;
+  opacity:.7;
+  box-shadow:-2px 2px rgba(25,30,50,.8);
+}
+
+.preview-background {
+  height:100%;
+  max-width:100%;
+  color:#cfcfde;
+  opacity:0;
+  z-index:900;
+  transition: opacity 500ms ease-in 70ms;
+}
+
+.preview-background:hover {
+  opacity:1;
+}
+
+
+
+.colmar-preview {
+  background-image:url("../images/colmar.jpg");
+  background-position:center;
+  background-size:cover;
+}
+
+.trackster-preview {
+  background-image:url("../images/trackster.jpg");
+  background-position:center;
+  background-size:cover;
+}
+
+.jumpstart-preview {
+  background-image:url("../images/jumpstart.jpg");
+  background-position:center;
+  background-size:cover;
+}
+
+.match-game-preview {
+  background-image:url("../images/match-game.jpg");
+  background-position:contain;
+  background-size:cover;
 }
