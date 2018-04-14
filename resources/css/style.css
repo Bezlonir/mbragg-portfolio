@@ -154,3 +154,14 @@ html {
   background-position:contain;
   background-size:cover;
 }
+
+/*mobile styling for projects section*/
+@media only screen and (max-width: 768px) {
+  .decor-pc {
+    visibility:hidden;
+  }
+
+  .decor-mobile {
+    visibility:visible;
+  }
+}
