@@ -91,6 +91,7 @@ html {
   display:flex;
   align-items:flex-start;
   justify-content:center;
+  z-index:3;
   padding:0;
 }
 
@@ -106,17 +107,27 @@ html {
   margin-top:.2em;
   max-width:80%;
   opacity:.9;
-
 }
 
-
 .site-preview {
+  position:relative;
   height:26rem;
   opacity:.7;
-  box-shadow:-2px 2px rgba(25,30,50,.8);
   padding-left:0;
   padding-right:0;
 }
+
+.site-preview:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow:-2px 2px rgba(25,30,50,.8);
+  z-index:-1;
+}
+
 
 .preview-background {
   height:100%;
@@ -199,17 +210,36 @@ html {
 .decor-mobile {
   display:none;
 }
+/*mobile styling for projects section*/
+@media only screen and (max-width: 1199px) {
+  .decor-mobile-top {
+    margin-top:2rem;
+  }
+
+}
 
 /*mobile styling for projects section*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1199px) {
   .decor-pc {
     display:none;
   }
 
+  .projects-top-decor {
+    margin-top:3rem;
+  }
+
+
   .decor-mobile {
     display:flex;
-    margin-top:2rem;
+  }
+
+  .decor-mobile-top {
+    margin-top:3rem;
     height:3.5rem;
+  }
+
+  .decor-mobile-bottom {
+    height:2rem;
   }
 
   .vision {
