@@ -115,19 +115,13 @@ html {
   opacity:.7;
   padding-left:0;
   padding-right:0;
-}
-
-.site-preview:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   box-shadow:-2px 2px rgba(25,30,50,.8);
-  z-index:-1;
+  transition: box-shadow 500ms ease-in 70ms;
 }
 
+.site-preview:hover {
+  box-shadow:none;
+}
 
 .preview-background {
   height:100%;
@@ -151,6 +145,7 @@ html {
   background-position:center;
   background-repeat:no-repeat;
   color:#f2f2fb;
+
   text-shadow: 1px 1px #1b1b2c,
               -1px 1px #1b1b2c,
               1px -1px #1b1b2c,
@@ -210,16 +205,18 @@ html {
 .decor-mobile {
   display:none;
 }
+
 /*mobile styling for projects section*/
 @media only screen and (max-width: 1199px) {
-  .decor-mobile-top {
-    margin-top:2rem;
+
+  .vision {
+    padding-top:10rem;
   }
 
-}
+  .vision h1 {
+    padding-top: 7rem;
+  }
 
-/*mobile styling for projects section*/
-@media only screen and (max-width: 1199px) {
   .decor-pc {
     display:none;
   }
@@ -227,7 +224,6 @@ html {
   .projects-top-decor {
     margin-top:3rem;
   }
-
 
   .decor-mobile {
     display:flex;
@@ -242,12 +238,8 @@ html {
     height:2rem;
   }
 
-  .vision {
-    padding-top:10rem;
-  }
-
-  .vision h1 {
-    padding-top: 7rem;
+  .site-preview {
+    height:32rem;
   }
 
   .projects-bottom-decor {
@@ -259,4 +251,16 @@ html {
     margin-right:.5rem;
     width:calc(100% - 1rem);
   }
+}
+
+/*mobile styling for projects section*/
+@media only screen and (max-width: 768px) {
+  .decor-mobile-top {
+    margin-top:2rem;
+  }
+
+  .site-preview {
+    height:26rem;
+  }
+
 }
