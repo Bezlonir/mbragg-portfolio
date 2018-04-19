@@ -309,16 +309,14 @@ footer h2 {
   font-weight:bold;
   font-size:4rem;
   margin-bottom:.6rem;
-}
-
-footer h2, footer p {
   color: #070712;
-  text-shadow: 1px 1px 3px #dedef6,
-              -1px 1px 3px #dedef6,
-              1px -1px 3px #dedef6,
-              -1px -1px 3px #dedef6;
+  text-shadow: 1px 1px #dedef6,
+              -1px 1px #dedef6,
+              1px -1px #dedef6,
+              -1px -1px #dedef6;
 }
 
 footer .jumbotron p {
   margin-bottom:.8rem;
+  color: #dedef6;
 }
