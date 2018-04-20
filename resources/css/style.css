@@ -1,7 +1,11 @@
 /*portfolio site for Michael Bragg, web programmer*/
 
 html {
+  font-family:"Bitter", serif;
+}
 
+p {
+  font-family:"Bree Serif", serif;
 }
 
 .image-container {
